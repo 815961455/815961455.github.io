@@ -1,11 +1,261 @@
-<!DOCTYPE html>
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="utf-8" />
-    <title>GitHub测试托管网站</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+   	<title>XML 在线格式化 | 菜鸟工具</title>
+	<meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel='stylesheet' id='wpProQuiz_front_style-css'  href='https://c.runoob.com/wp-content/plugins/Wp-Pro-Quiz/css/wpProQuiz_front.min.css?ver=0.37' type='text/css' media='all' />
+<link rel="canonical" href="https://c.runoob.com/front-end/710" />
+<meta name="keywords" content="XML 在线格式化">
+<meta name="description" content="菜鸟工具-XML 在线格式化..">
+   
+			<script src="//cdn.staticfile.org/codemirror/5.48.2/codemirror.min.js"></script>
+		<script src="https://cdn.staticfile.org/codemirror/5.48.2/addon/mode/simple.min.js"></script>
+		<link rel="stylesheet" href="//cdn.staticfile.org/codemirror/5.48.2/codemirror.min.css">
+				
+		<script src="//cdn.staticfile.org/codemirror/5.48.2/mode/xml/xml.js"></script>
+				<link href="https://cdn.staticfile.org/normalize/7.0.0/normalize.min.css" rel="stylesheet">
+		
+    <!-- Bootstrap Core CSS -->
+    <link href="//cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="/wp-content/themes/toolrunoob/startbootstrap/css/modern-business.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="/wp-content/themes/toolrunoob/assets/font-awesome-4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!--[if lt IE 9]>
+        <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+        <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- PHP 代码 -->
+    <link rel="stylesheet" href="/wp-content/themes/toolrunoob/style.css?version=1.03"> 
+   
+
+	
+
+ <script src="https://cdn.staticfile.org/jquery/2.2.4/jquery.min.js"></script>
+
+<script src="https://cdn.staticfile.org/clipboard.js/2.0.4/clipboard.min.js"></script>
+
 </head>
+
 <body>
-    <h1>你好，世界（Hello World）</h1>
+
+
+<nav class="navbar navbar-inverse navbar-fixed-top runoob-header" role="navigation">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">菜单切换</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand runoob-title" href="//c.runoob.com">菜鸟工具</a>
+		</div>
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		    <ul class="nav navbar-nav">
+			  <li><a target="_blank" href="/front-end/61">WEB 在线编辑器</a></li>
+			  <li><a target="_blank" href="/more/svgeditor">SVG 在线编辑器</a></li>
+		      <li><a target="_blank" href="/examples">实例归档</a></li>
+		      <li><a href="https://www.runoob.com" target="_blank">菜鸟教程</a></li>
+		     
+		    </ul>
+		    <div class="col-sm-3 col-md-3">
+		        <form class="navbar-form" role="search" action="/index.php" method="get">
+		        <div class="input-group">
+		             		            <input type="text" class="form-control" name="s" value="" placeholder="输入关键字……" >
+		            <div class="input-group-btn">
+		                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+		            </div>
+		        </div>
+		        </form>
+				
+		    </div> 
+			<form class="navbar-form">
+			<button onclick="dashangToggle()" type="button" style="display:none;" class="btn btn-warning pull-right">赞赏工具 <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+			</button>
+			</form>
+			
+			
+		 </div>
+		<!-- /.navbar-collapse -->
+	</div>
+        <!-- /.container -->
+</nav>
+<!-- 打赏 start -->
+<div class="hide_box"></div>
+<div class="shang_box">
+    <a class="shang_close" href="javascript:void(0)" onclick="dashangToggle()" title="关闭"><img src="https://static.runoob.com/images/dashang/close.jpg" alt="取消" /></a>
+    
+    <div class="shang_tit">
+        <p>感谢您的支持，我会继续努力的!</p>
+    </div>
+    <div class="shang_payimg">
+        <img src="https://static.runoob.com/images/dashang/weipayimg.png" alt="扫码支持" title="扫一扫" />
+    </div>
+        <div class="pay_explain">扫码打赏，你说多少就多少<br><span style="font-size: 16px;font-weight: bold;">也可以直接加入<a href="https://www.runoob.com/w3cnote/knowledge-start.html" target="_blank" style="color: red;">我的圈子</a></span></div>
+    <div class="shang_payselect">
+       
+        <div class="pay_item checked" data-id="weipay">
+            <span class="radiobox"></span>
+            <span class="pay_logo"><img src="https://static.runoob.com/images/dashang/wechat.jpg" alt="微信" /></span>
+        </div>
+        <div class="pay_item " data-id="alipay">
+            <span class="radiobox"></span>
+            <span class="pay_logo"><img src="https://static.runoob.com/images/dashang/alipay.jpg" alt="支付宝" /></span>
+        </div>
+    </div>
+    <div class="shang_info">
+        <p>打开<span id="shang_pay_txt">微信</span>扫一扫，即可进行扫码打赏哦</p>
+		<p><a href="//c.runoob.com/codedemo/5348" target="_blank"><span style=" font-size: 14px;color: #000;font-weight: bold;">点我查看本站打赏源码！</span></a></p>
+        <p>Powered by <a href="http://www.runoob.com" target="_blank" title="菜鸟教程">RUNOOB.COM</a>，学的不仅是技术，更是梦想！！！</p>
+    </div>
+</div>
+<script>
+$(function(){
+    $(".pay_item").click(function(){
+        $(this).addClass('checked').siblings('.pay_item').removeClass('checked');
+        var dataid=$(this).attr('data-id');
+        $(".shang_payimg img").attr("src","https://static.runoob.com/images/dashang/"+dataid+"img.png");
+        $("#shang_pay_txt").text(dataid=="alipay"?"支付宝":"微信");
+    });
+});
+function dashangToggle(){
+    $(".hide_box").fadeToggle();
+    $(".shang_box").fadeToggle();
+}
+</script>
+<!-- 打赏 end -->
+<div class="container">	
+<br>
+<style type="text/css">
+.CodeMirror {
+	height: 500px;
+}
+
+</style>
+
+<div class="row">
+
+	<div class="col-md-12">
+		<div class="panel panel-default">
+					<div id="compiler" class="panel-heading">
+			<form class="form-inline" role="form">
+             
+               <label><strong style="font-size: 16px"><i class="fa fa-cogs"></i> XML 在线格式化</strong></label>
+			</form>
+			</div>
+			<div class="panel-body">
+			<form role="form" id="compiler-form">
+              <div class="form-group">
+                <div class="row">
+                  <div class="col-md-12">
+                    <textarea class="form-control"  id="code" name="code" rows="10"><sites>
+    <site>
+        <name>菜鸟教程</name>
+        <url>www.runoob.com</url>
+    </site>
+    <site>
+        <name>Google</name>
+        <url>www.google.com</url>
+    </site>
+    <site>
+        <name>淘宝</name>
+        <url>www.taobao.com</url>
+    </site>
+</sites></textarea>
+                  </div>
+                  <div class="col-md-12">
+                  <form class="form-inline" role="form">
+                   <button type="button" class="btn btn-success" id="submitBTN"><i class="fa fa-expand"></i> 格式化</button>
+              	   <button type="button" class="btn btn-default" id="submitBTN2"><i class="fa fa-compress"></i> 压缩</button>
+              	   </form>
+              	  </div>
+                  
+                </div>
+              </div>
+            </form>
+			</div>
+		</div>
+	</div>
+	
+	
+</div>
+<script type="text/javascript" src="//static.runoob.com/assets/js/jquery.format.js"></script>
+<script>
+
+var editor1 = CodeMirror.fromTextArea(document.getElementById("code"), {
+	lineNumbers: true,
+	matchBrackets: true,
+	mode: "application/xml",
+	indentUnit: 4,
+	indentWithTabs: true,
+});
+
+
+$("#submitBTN").click(function() {
+	var str  = editor1.getValue();
+	result = $.format(str, {method: 'xml'});
+	editor1.getDoc().setValue(result);
+});
+
+$("#submitBTN2").click(function() {
+	var str  = editor1.getValue();
+	result = $.format(str, {method: 'xmlmin'});
+	editor1.getDoc().setValue(result);
+});
+</script>
+
+
+
+<br>
+<hr>
+<!-- Footer -->
+<footer>
+	<div class="row">
+		<div class="col-lg-12">
+			<p>Copyright &copy; <a href="//www.runoob.com/">菜鸟教程</a> 2021 备案号：<a target="_blank" rel="nofollow" href="https://beian.miit.gov.cn/">闽ICP备15012807号-1</a></p>
+		</div>
+	</div>
+</footer>
+
+</div>
+
+<div style="display:none;">
+<script>
+var _hmt = _hmt || [];
+(function() {
+	// 统计
+	var hm = document.createElement("script");
+	hm.src = "https://hm.baidu.com/hm.js?68c6d4f0f6c20c5974b17198fa6fd40a";
+	var s = document.getElementsByTagName("script")[0]; 
+	s.parentNode.insertBefore(hm, s);
+})();
+$(function() {
+	//代码高亮
+	$('pre').each(function() {
+		if(!$(this).hasClass("prettyprint")) {
+			$(this).addClass("prettyprint");
+		}
+	});
+})
+</script>
+
+</div>
+
+<script src="//cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </body>
+
 </html>
