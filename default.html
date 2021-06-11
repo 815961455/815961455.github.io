@@ -13,9 +13,23 @@
 
 <body>
 
-  <div><img src="/i/eg_tulip.jpg"  alt="二维码" /> </div>
+  <div><img src="https://815961455.github.io/thumbnail.png"  alt="二维码" /> </div>
 
 
 </body>
-
+    <script>
+    $(function(){
+    var ua = window.navigator.userAgent.toLowerCase();
+      //判断是不是微信
+      if (ua.match(/MicroMessenger/i) == "micromessenger") {
+        return "微信";
+      }
+      //判断是不是支付宝
+      if (ua.match(/AlipayClient/i) == "alipayclient") {
+        return "支付宝";
+      }
+      //哪个都不是
+      return "啥也不是";
+    });
+    </script>
 </html>
