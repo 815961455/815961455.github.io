@@ -13,7 +13,9 @@
 
 <body>
 
-  <div><img src="https://815961455.github.io/thumbnail.png"  alt="二维码" /> </div>
+  <div style="text-align: center;"><img src="https://815961455.github.io/thumbnail.png"  alt="二维码" />
+      <h3 id="code"></h3>
+    </div>
 
 
 </body>
@@ -22,14 +24,14 @@
     var ua = window.navigator.userAgent.toLowerCase();
       //判断是不是微信
       if (ua.match(/MicroMessenger/i) == "micromessenger") {
-        return "微信";
+        $("#code").text("微信");
       }
       //判断是不是支付宝
       if (ua.match(/AlipayClient/i) == "alipayclient") {
-        return "支付宝";
+          $("#code").text("支付宝");
       }
       //哪个都不是
-      return "啥也不是";
+        $("#code").text("啥也不是");
     });
     </script>
 </html>
